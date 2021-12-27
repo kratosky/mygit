@@ -1,0 +1,372 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;配置好了reset 三个档的接口&quot;" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
+  </component>
+  <component name="ProjectId" id="222UODZsjgKpvcS3fSPZER4zJXz" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="JavaVariableFindUsagesOptions.isSearchForAccessors" value="true" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="indexoperation.Index" />
+      <recent name="fileoperation.FileReader" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="commander" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.CLI">
+    <configuration name="CLI" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="commander.CLI" />
+      <module name="jit-first-delivery" />
+      <option name="PROGRAM_PARAMETERS" value="git init" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="commander.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StringTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.StringTest" />
+      <module name="jit-first-delivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.Test" />
+      <module name="jit-first-delivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestZip" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestZip" />
+      <module name="jit-first-delivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testBranchCheckout" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.testBranchCheckout" />
+      <module name="jit-first-delivery" />
+      <option name="PROGRAM_PARAMETERS" value="jit init" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.testLog" />
+      <module name="jit-first-delivery" />
+      <option name="PROGRAM_PARAMETERS" value="jit init" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="testNullCommit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.testNullCommit" />
+      <module name="jit-first-delivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.CLI" />
+      <item itemvalue="Application.Test" />
+      <item itemvalue="Application.TestZip" />
+      <item itemvalue="Application.StringTest" />
+      <item itemvalue="Application.testNullCommit" />
+      <item itemvalue="Application.testLog" />
+      <item itemvalue="Application.testBranchCheckout" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.testBranchCheckout" />
+        <item itemvalue="Application.testLog" />
+        <item itemvalue="Application.testNullCommit" />
+        <item itemvalue="Application.StringTest" />
+        <item itemvalue="Application.TestZip" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="" />
+      <created>1639035145244</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639035145244</updated>
+      <workItem from="1639035147907" duration="16949000" />
+      <workItem from="1639066701550" duration="14020000" />
+      <workItem from="1639538994247" duration="5472000" />
+      <workItem from="1639642774904" duration="21907000" />
+      <workItem from="1639884886674" duration="3196000" />
+      <workItem from="1639895603554" duration="6655000" />
+      <workItem from="1639905265232" duration="33394000" />
+      <workItem from="1640093008176" duration="31108000" />
+      <workItem from="1640168624629" duration="62962000" />
+      <workItem from="1640603581041" duration="84000" />
+    </task>
+    <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
+      <created>1639920020330</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639920020330</updated>
+    </task>
+    <task id="LOCAL-00002" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
+      <created>1639920051252</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639920051252</updated>
+    </task>
+    <task id="LOCAL-00003" summary="commit -m &quot;测试了zlib模块，决定不压缩&quot;">
+      <created>1639924961423</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1639924961423</updated>
+    </task>
+    <task id="LOCAL-00004" summary="commit -m &quot;添加并测试了新的压缩与解压缩模块Zip，替换了原来的Zlib&quot;">
+      <created>1639969552380</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1639969552380</updated>
+    </task>
+    <task id="LOCAL-00005" summary="commit -m &quot;序列化与反序列化功能改进，对树改革前存档&quot;">
+      <created>1640092435390</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1640092435390</updated>
+    </task>
+    <task id="LOCAL-00006" summary="commit -m &quot;对Tree，Commit彻底改革，建立了Index暂存区，并在新的基础上简历了add方法与commit方法&quot;">
+      <created>1640162719359</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1640162719360</updated>
+    </task>
+    <task id="LOCAL-00007" summary="commit -m &quot;增加了jit rm方法&quot;">
+      <created>1640184862641</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1640184862641</updated>
+    </task>
+    <task id="LOCAL-00008" summary="commit -m &quot;彻底改造Tree类型，将其中Arraylist变成TreeMap，并修改了与之相关的方法，大大提升了objects空间存储效率&quot;">
+      <created>1640230487849</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1640230487849</updated>
+    </task>
+    <task id="LOCAL-00009" summary="commit -m &quot;进一步优化了生成treeMap的方法&quot;">
+      <created>1640236862985</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1640236862985</updated>
+    </task>
+    <task id="LOCAL-00010" summary="commit -m &quot;添加HEAD指针以及分支名之前保存&quot;">
+      <created>1640250573497</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1640250573497</updated>
+    </task>
+    <task id="LOCAL-00011" summary="commit -m &quot;实现了分支，头指针，并以此修改了commit getParent方法 以及初始化功能&quot;">
+      <created>1640266854027</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1640266854027</updated>
+    </task>
+    <task id="LOCAL-00012" summary="commit -m &quot;给Commit增加了访问上一个Commit方法&quot;">
+      <created>1640270041029</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1640270041029</updated>
+    </task>
+    <task id="LOCAL-00013" summary="commit -m &quot;增加了把树还原到Index中的方法&quot;">
+      <created>1640270803525</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1640270803525</updated>
+    </task>
+    <task id="LOCAL-00014" summary="commit -m &quot;进一步完善了 commit中的各种方法&quot;">
+      <created>1640296680973</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1640296680973</updated>
+    </task>
+    <task id="LOCAL-00015" summary="commit -m &quot;增加了JitLog功能&quot;">
+      <created>1640303217587</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1640303217587</updated>
+    </task>
+    <task id="LOCAL-00016" summary="commit -m &quot;JitLog功能进一步完善&quot;">
+      <created>1640304033537</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1640304033537</updated>
+    </task>
+    <task id="LOCAL-00017" summary="commit -m &quot;完善了log branch checkout merge gc功能的CLI接口与桩函数&quot;">
+      <created>1640306773092</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1640306773092</updated>
+    </task>
+    <task id="LOCAL-00018" summary="commit -m &quot;增加并测试了branch 和checkout&quot;">
+      <created>1640312196691</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1640312196691</updated>
+    </task>
+    <task id="LOCAL-00019" summary="commit -m &quot;配置好了reset 三个档的接口&quot;">
+      <created>1640314432384</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1640314432384</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;" />
+    <MESSAGE value="commit -m &quot;测试了zlib模块，决定不压缩&quot;" />
+    <MESSAGE value="commit -m &quot;添加并测试了新的压缩与解压缩模块Zip，替换了原来的Zlib&quot;" />
+    <MESSAGE value="commit -m &quot;序列化与反序列化功能改进，对树改革前存档&quot;" />
+    <MESSAGE value="commit -m &quot;对Tree，Commit彻底改革，建立了Index暂存区，并在新的基础上简历了add方法与commit方法&quot;" />
+    <MESSAGE value="commit -m &quot;增加了jit rm方法&quot;" />
+    <MESSAGE value="commit -m &quot;彻底改造Tree类型，将其中Arraylist变成TreeMap，并修改了与之相关的方法，大大提升了objects空间存储效率&quot;" />
+    <MESSAGE value="commit -m &quot;进一步优化了生成treeMap的方法&quot;" />
+    <MESSAGE value="commit -m &quot;添加HEAD指针以及分支名之前保存&quot;" />
+    <MESSAGE value="commit -m &quot;实现了分支，头指针，并以此修改了commit getParent方法 以及初始化功能&quot;" />
+    <MESSAGE value="commit -m &quot;给Commit增加了访问上一个Commit方法&quot;" />
+    <MESSAGE value="commit -m &quot;增加了把树还原到Index中的方法&quot;" />
+    <MESSAGE value="commit -m &quot;进一步完善了 commit中的各种方法&quot;" />
+    <MESSAGE value="commit -m &quot;增加了JitLog功能&quot;" />
+    <MESSAGE value="commit -m &quot;JitLog功能进一步完善&quot;" />
+    <MESSAGE value="commit -m &quot;完善了log branch checkout merge gc功能的CLI接口与桩函数&quot;" />
+    <MESSAGE value="commit -m &quot;增加并测试了branch 和checkout&quot;" />
+    <MESSAGE value="commit -m &quot;配置好了reset 三个档的接口&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;配置好了reset 三个档的接口&quot;" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/testBranchCheckout.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+</project>
