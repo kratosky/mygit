@@ -184,7 +184,7 @@
       <workItem from="1640093008176" duration="31108000" />
       <workItem from="1640168624629" duration="62962000" />
       <workItem from="1640603581041" duration="84000" />
-      <workItem from="1640604088086" duration="310000" />
+      <workItem from="1640604088086" duration="386000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -333,7 +333,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640604400947</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="commit -m &quot;增加了index类&quot;">
+      <created>1640604451182</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1640604451182</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
