@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;配置好了reset 三个档的接口&quot;" />
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了index类&quot;" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,6 +184,7 @@
       <workItem from="1640093008176" duration="31108000" />
       <workItem from="1640168624629" duration="62962000" />
       <workItem from="1640603581041" duration="84000" />
+      <workItem from="1640604088086" duration="310000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -318,7 +319,21 @@
       <option name="project" value="LOCAL" />
       <updated>1640314432384</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="commit -m &quot;配置好了reset 三个档的接口&quot;">
+      <created>1640604151161</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1640604151161</updated>
+    </task>
+    <task id="LOCAL-00021" summary="commit -m &quot;增加了index类&quot;">
+      <created>1640604400947</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1640604400947</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -356,7 +371,8 @@
     <MESSAGE value="commit -m &quot;完善了log branch checkout merge gc功能的CLI接口与桩函数&quot;" />
     <MESSAGE value="commit -m &quot;增加并测试了branch 和checkout&quot;" />
     <MESSAGE value="commit -m &quot;配置好了reset 三个档的接口&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;配置好了reset 三个档的接口&quot;" />
+    <MESSAGE value="commit -m &quot;增加了index类&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;增加了index类&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
