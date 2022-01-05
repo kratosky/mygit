@@ -1,24 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了reset功能&quot;">
-      <change afterPath="$PROJECT_DIR$/.jit/objects/357f981449fe68f5f6a7a28f40f58844fb1f75b3.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/371353fd35c4c12dbca42dcd3ff4cdec1722e7.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/93cbd26a4a3d14e616a1b55bebb5d02e262a6ced.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/da39a3ee5e6b4bd3255bfef95601890afd879.Tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/ef7c2c855f0d0941e3144c2fb430c43cd17acb.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/restoreCommit/what/farm/whatthehell.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/restoreCommit/what/lily.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/restoreCommit/what/tim/哈哈哈.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/restoreCommit/what/turtle.txt" afterDir="false" />
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了垃圾回收功能&quot;">
+      <change afterPath="$PROJECT_DIR$/src/core/JitDiff.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/branchoperation/Branch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/branchoperation/Branch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commander/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commander/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/JitAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/JitGC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitGC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileoperation/FileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileoperation/FileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileoperation/FileStatus.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/serialization/ZipSerial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serialization/ZipSerial.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitMerge.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,6 +19,7 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitSEFilterConfiguration">
@@ -208,7 +195,7 @@
       <workItem from="1640614949776" duration="161000" />
       <workItem from="1640698997232" duration="504000" />
       <workItem from="1641355583885" duration="12658000" />
-      <workItem from="1641373481092" duration="16249000" />
+      <workItem from="1641373481092" duration="18103000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -399,7 +386,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641381456795</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="commit -m &quot;增加了垃圾回收功能&quot;">
+      <created>1641394247240</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1641394247240</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -443,7 +437,8 @@
     <MESSAGE value="commit -m &quot;增加了branch类，完成了checkout在recoverCommit区恢复的工作&quot;" />
     <MESSAGE value="commit -m &quot;修改了commit，完善了checkout功能&quot;" />
     <MESSAGE value="commit -m &quot;增加了reset功能&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;增加了reset功能&quot;" />
+    <MESSAGE value="commit -m &quot;增加了垃圾回收功能&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;增加了垃圾回收功能&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
