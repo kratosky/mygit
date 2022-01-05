@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了index类&quot;">
-      <change afterPath="$PROJECT_DIR$/src/test/delTest.java" afterDir="false" />
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;修复了reset&quot;">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/index/trackedBlob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/index/trackedBlob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/JitAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitAdd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fileoperation/FileDeletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileoperation/FileDeletion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gitobject/Commit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitobject/Commit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/jitinitiation/JitInitiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jitinitiation/JitInitiation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/delTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/delTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +63,7 @@
     <configuration name="CLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="commander.CLI" />
       <module name="jit-first-delivery" />
-      <option name="PROGRAM_PARAMETERS" value="git rm what" />
+      <option name="PROGRAM_PARAMETERS" value="git init" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="commander.*" />
@@ -193,7 +195,7 @@
       <workItem from="1640609912016" duration="1964000" />
       <workItem from="1640614949776" duration="161000" />
       <workItem from="1640698997232" duration="504000" />
-      <workItem from="1641355583885" duration="3048000" />
+      <workItem from="1641355583885" duration="6092000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -349,7 +351,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640604451182</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="commit -m &quot;修复了reset&quot;">
+      <created>1641362503258</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1641362503258</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -388,7 +397,8 @@
     <MESSAGE value="commit -m &quot;增加并测试了branch 和checkout&quot;" />
     <MESSAGE value="commit -m &quot;配置好了reset 三个档的接口&quot;" />
     <MESSAGE value="commit -m &quot;增加了index类&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;增加了index类&quot;" />
+    <MESSAGE value="commit -m &quot;修复了reset&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;修复了reset&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

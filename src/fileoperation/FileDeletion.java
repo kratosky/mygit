@@ -25,12 +25,29 @@ public class FileDeletion
         }
     }
 
+    /**
+     * 清空传入文件夹
+     * @param file
+     */
     public static void emptyDirec(File file)
     {
+        if((!file.exists())||(!file.isDirectory()))
+        {
+            System.out.println("文件夹 "+file.getName()+"不存在！");
+        }
         deleteFile(file);
         file.mkdirs();
     }
-    
+
+    /**
+     * 重载，清空传入文件夹路径
+     * @param path
+     */
+    public static void emptyDirec(String path)
+    {
+        emptyDirec(new File(path));
+    }
+
 	/**
 	 * 进行重载，对以字符串传进来的路径转化成File类并调用上方函数处理
 	 * @param path
@@ -39,7 +56,7 @@ public class FileDeletion
     {
         deleteFile(new File(path));
     }
-    
+
     /**
      * Delete the content of a file.
      * 通过写空内容来实现
