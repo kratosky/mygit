@@ -32,7 +32,7 @@ public class JitAdd
 
             //对addBlob进行判定，并根据情况序列化入“.jit/objects”文件夹
             //判定该路径下该文件名文件是否已经存在，若已经存在，且该文件有了新的更改，则将原版文件对应的在objects文件夹里的序列化文件删除
-            String serialAddress = addblob.getKey()+addblob.getFmt();
+            String serialAddress = addblob.getKey()+'.'+addblob.getFmt();
             if(trackedMap.containsKey(addblob.getRelevantPath()))
             {
                 //若发生变动，将原先的Blob从objects库中删去

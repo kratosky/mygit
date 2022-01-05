@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了index类&quot;" />
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了index类&quot;">
+      <change afterPath="$PROJECT_DIR$/src/test/delTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/index/trackedBlob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/index/trackedBlob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitAdd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitAdd.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -56,7 +61,7 @@
     <configuration name="CLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="commander.CLI" />
       <module name="jit-first-delivery" />
-      <option name="PROGRAM_PARAMETERS" value="git init" />
+      <option name="PROGRAM_PARAMETERS" value="git rm what" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="commander.*" />
@@ -185,6 +190,10 @@
       <workItem from="1640168624629" duration="62962000" />
       <workItem from="1640603581041" duration="84000" />
       <workItem from="1640604088086" duration="386000" />
+      <workItem from="1640609912016" duration="1964000" />
+      <workItem from="1640614949776" duration="161000" />
+      <workItem from="1640698997232" duration="504000" />
+      <workItem from="1641355583885" duration="3048000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
