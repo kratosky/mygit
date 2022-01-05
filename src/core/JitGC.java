@@ -103,7 +103,7 @@ public class JitGC
     {
         objectMap.forEach((serialFileName) ->
         {
-            try { FileDeletion.deleteFile(serialFileName);}
+            try { FileDeletion.deleteFile(".jit/objects/"+serialFileName);System.out.println(serialFileName+" is deleted!");}
             catch (Exception e) { e.printStackTrace();}
         });
 
