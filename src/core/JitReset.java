@@ -12,17 +12,34 @@ public class JitReset
 
     public static void resetMixed(int n) throws Exception
     {
-
+        Commit toRestore = getLastNCommit(n);
+        if(toRestore != null)
+        {
+            toRestore.restoreCommitIndex();
+        }
     }
 
     public static void resetHard(int n) throws Exception
     {
-
+        Commit toRestore = getLastNCommit(n);
+        if(toRestore != null)
+        {
+            toRestore.restoreCommitIndex();
+            toRestore.restoreCommitFiles(".jit/restoreCommit");
+        }
     }
 
     public static void resetSuper(int n) throws Exception
     {
-
+        Commit toRestore = getLastNCommit(n);
+        if(toRestore != null)
+        {
+            toRestore.restoreCommitIndex();
+            toRestore.restoreCommitFiles(".jit/restoreCommit");
+            Map<String,String> branchmap = Branch.getBranchMap();
+            branchmap.put(Branch.getCurrentBranch(),toRestore.getKey()+'.'+toRestore.getFmt());
+            Branch.setBranchMap(branchmap);
+        }
     }
 
     /**
@@ -42,7 +59,7 @@ public class JitReset
             for (int i = 1; 1 < n; i++)
             {
                 iter = iter.getParentCommit();
-                if ((iter.getFmt() == null))
+                if ((iter == null))
                 {
                     System.out.println("回滚次数超过当前分支长度");
                     return null;

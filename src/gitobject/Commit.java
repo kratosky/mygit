@@ -11,7 +11,7 @@ import sha1.SHA1;
 
 public class Commit extends GitObject
 {
-    private String commitTree; 		// the sha1 value of present committed tree
+    private String commitTree; 		// the serialized filename of present committed tree
     private String parent; 	// the serial Filename of the parent commit
     private String author; 	// the author's name and timestamp
     private String committer; // the committer's info
