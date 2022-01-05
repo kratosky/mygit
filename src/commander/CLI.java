@@ -281,6 +281,7 @@ public class CLI
 			{
 				String branchName = args[3];
 				JitBranch.branch(branchName);
+				JitCheckout.checkout(branchName);
 				System.out.println("Built and switched to " + branchName);
 			}
 		}

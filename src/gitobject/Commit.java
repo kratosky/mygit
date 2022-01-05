@@ -43,14 +43,14 @@ public class Commit extends GitObject
         this.message = message;
 
         //将暂存区的多个文件在清空后的".jit/restoreCommit"文件夹下恢复为带有文件夹的文件系统
-        File restoreCommit = new File(".jit/restoreCommit");
-        FileDeletion.emptyDirec(restoreCommit);
-        Index.restoreWork(".jit/restoreCommit");
+        File toCommit = new File(".jit/toCommit");
+        toCommit.mkdirs();
+        Index.restoreWork(".jit/toCommit");
 
 
-        //将".jit/restoreCommit"文件夹生成一颗树,并存入".jit/objects"（一定要在清空暂存区之前）
+        //将".jit/toCommit"文件夹生成一颗树,并存入".jit/objects"（一定要在清空暂存区之前）
 
-        Tree treeToCommit = new Tree(restoreCommit,".jit/restoreCommit");
+        Tree treeToCommit = new Tree(toCommit,".jit/toCommit");
         this.commitTree = treeToCommit.getKey()+"."+treeToCommit.getFmt();
         treeToCommit.compressSerialize();
 
@@ -58,7 +58,7 @@ public class Commit extends GitObject
         Index.initIndex();
 
         //清空".jit/ToCommit"文件夹
-        FileDeletion.emptyDirec(restoreCommit);
+        FileDeletion.deleteFile(toCommit);
 
         //将生成的树的序列化文件的文件名赋给本次Commit对象的commitTree属性
         this.commitTree = treeToCommit.getKey()+"."+treeToCommit.getFmt();

@@ -1,6 +1,7 @@
 package core;
 
 import branchoperation.Branch;
+import fileoperation.FileDeletion;
 import fileoperation.FileReader;
 import gitobject.Commit;
 
@@ -32,6 +33,7 @@ public class JitCheckout
                 System.out.printf("成功checkout到%s分支！\n", branch);
             }
             //无论checkout的是不是当前分支，都将该分支最新commit版本恢复到restoreCommit文件夹
+            FileDeletion.emptyDirec(".jit/restoreCommit");
             Commit checkTo = Commit.deserialize(branchMap.get(branch));
             checkTo.restoreCommitFiles(".jit/restoreCommit");
             System.out.printf("已将该分支最新commit版本恢复到restoreCommit文件夹！\n");

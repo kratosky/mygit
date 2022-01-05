@@ -1,7 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了垃圾回收功能合并了merge和diff&quot;" />
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;调试通过了merge&quot;">
+      <change afterPath="$PROJECT_DIR$/.jit/objects/26d97075e43a3cfebfdc0b24779e97a46fc5411.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/2dbade2671ccca26272ab3c828012e27d9eac3.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/2f4c77ee453753e71b453e70f9f6ccc282108dae.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/340b214c6222369795a6c7fc4a80593463e8.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/4fd2de883e186bdabd3c689ada2f46a53dfedc1.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/53ce4019ebbf1fbbb35894374daeca557275bde.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/5ef64a24e1c55071a142a48f6d4f1a79a72aa20.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/68bc8b45d5e5cc2ae19e3719a2617825f416ed1f.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/6deef6704cd99415ce5d6ebf0b5b6624abc4038.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/6f6624c8a88a92ac65d9f277e786ad85847e.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/76e5912dc19f209c3ac551af745068c8c35b3a4a.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/8b8bc65b4a4355be1f49b0f7c125ad26d5441e.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/8fd9b6a096b39f4ce997949c4bb3bbdcda9494.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/9aca60cb6d4023ba646e29b274b1434c99b3b.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/a0f447166b4869974d28e49847f59d28615d22.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/b5c69d539bf8a7e99baee6f88dccf21c5638b4.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/be9e5ee6d7760e26dbfb1523b88206cf66c4f82.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/cadf48b6baacab4342dcae839a4cbaf1cc423133.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/da1f7b92d54c9421c5cbcf85c150d9946de0fb20.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/e0c695f9835ef2896a3dedbd0f443f93b4ab2d1.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/f84eba9ba7806a8c9548d75d815ca075ff3675cb.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/fa7cc9188624fc1efe324dadff625ae4a099245d.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/ff72c3144e0becba55a2468b0889badf2b11644.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/restoreCommit/clashed-Files-Of-Vice-Branch/tiger.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/restoreCommit/tiger.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/branches/HEAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/HEAD.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/branches/branchMap" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/branchMap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/index/trackedBlob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/index/trackedBlob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/357f981449fe68f5f6a7a28f40f58844fb1f75b3.Commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/371353fd35c4c12dbca42dcd3ff4cdec1722e7.Commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/3a35ec5d95c28d9fd28e69e18ab7fb626bd05866.Commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/93cbd26a4a3d14e616a1b55bebb5d02e262a6ced.Commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/da39a3ee5e6b4bd3255bfef95601890afd879.Tree" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/da39a3ee5e6b4bd3255bfef95601890afd879.Tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/e50e7483f493a8c4266efb6de1622eca13a8511.Tree" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/e50e7483f493a8c4266efb6de1622eca13a8511.Tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/ef7c2c855f0d0941e3144c2fb430c43cd17acb.Commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/farm/whatthehell.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/lily.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/tim/哈哈哈.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/turtle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/branchoperation/Branch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/branchoperation/Branch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/commander/CLI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/commander/CLI.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitAdd.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitCheckout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitCheckout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitGC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitGC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitMerge.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitMerge.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/fileoperation/FileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/fileoperation/FileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/fileoperation/FileStatus.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/gitobject/Commit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/gitobject/Commit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/serialization/ZipSerial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/serialization/ZipSerial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commander/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commander/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitCheckout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitCheckout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gitobject/Commit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitobject/Commit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tiger.txt" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -58,7 +118,7 @@
     <configuration name="CLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="commander.CLI" />
       <module name="jit-first-delivery" />
-      <option name="PROGRAM_PARAMETERS" value="git reset --hard" />
+      <option name="PROGRAM_PARAMETERS" value="git init" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="commander.*" />
@@ -192,6 +252,7 @@
       <workItem from="1640698997232" duration="504000" />
       <workItem from="1641355583885" duration="12658000" />
       <workItem from="1641373481092" duration="18188000" />
+      <workItem from="1641397200805" duration="4211000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -416,7 +477,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit -m &quot;测试了zlib模块，决定不压缩&quot;" />
     <MESSAGE value="commit -m &quot;添加并测试了新的压缩与解压缩模块Zip，替换了原来的Zlib&quot;" />
     <MESSAGE value="commit -m &quot;序列化与反序列化功能改进，对树改革前存档&quot;" />
     <MESSAGE value="commit -m &quot;对Tree，Commit彻底改革，建立了Index暂存区，并在新的基础上简历了add方法与commit方法&quot;" />
@@ -441,7 +501,8 @@
     <MESSAGE value="commit -m &quot;增加了reset功能&quot;" />
     <MESSAGE value="commit -m &quot;增加了垃圾回收功能&quot;" />
     <MESSAGE value="commit -m &quot;增加了垃圾回收功能合并了merge和diff&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;增加了垃圾回收功能合并了merge和diff&quot;" />
+    <MESSAGE value="commit -m &quot;调试通过了merge&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;调试通过了merge&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
