@@ -69,6 +69,11 @@ public class Index
         oo.close();
     }
 
+    /**
+     * 将暂存区跟踪的文件恢复到指定路径下
+     * @param restorePath
+     * @throws Exception
+     */
     public static void restoreWork(String restorePath) throws Exception
     {
         Map<String, String> indexMap = Index.getIndexMap();
@@ -76,6 +81,19 @@ public class Index
         {
             try { Blob.deserialize(serialFileName).toFile(restorePath);}
             catch (Exception e) { e.printStackTrace();}
+        });
+    }
+
+    /**
+     * 展示暂存区跟踪的文件相对路径 与 序列化文件名
+     * @throws Exception
+     */
+    public static void showIndex() throws Exception
+    {
+        Map<String, String> indexMap = Index.getIndexMap();
+        indexMap.forEach((relevantPath,serialFileName) ->
+        {
+            System.out.println(relevantPath + "     " + serialFileName);
         });
     }
 

@@ -33,6 +33,7 @@ public class JitBranch
     public static void showBranch() throws Exception
     {
         //分别展示每一个分支
+        System.out.println("所有已经创建的分支以及该分支对应的最新commit:");
         Map<String, String> branchMap = Branch.getBranchMap();
         branchMap.forEach((branchName,commitSerialFileName) ->
         {
@@ -41,7 +42,7 @@ public class JitBranch
         //打印头结点指针指向的分支
         File HEAD = new File(".jit" + File.separator + "branches"+File.separator+"HEAD.txt");
         String currentBranchName = FileReader.getContent(HEAD);
-        System.out.println( "Current HEAD points to the branch\n" +  currentBranchName + "!");
+        System.out.println( "Current HEAD points to the branch\n" +  currentBranchName);
     }
 
     public static void delBranch(String branch) throws Exception

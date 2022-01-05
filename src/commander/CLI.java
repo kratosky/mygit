@@ -42,6 +42,10 @@ public class CLI
 		{// jit commit path
 			jitCommit(args);
 		}
+		else if(args.length == 2 && args[1].equals("status"))
+		{// jit status
+			jitStatus();
+		}
 		else if(args.length == 2 && args[1].equals("log"))
 		{// jit log
 			jitLog();
@@ -178,6 +182,18 @@ public class CLI
 		try
 		{
 			JitLog.log();
+		}
+		catch (Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+	public static void jitStatus() throws IOException
+	{
+		try
+		{
+			JitStatus.status();
 		}
 		catch (Exception e)
 		{

@@ -1,22 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;调试通过了merge&quot;">
-      <change afterPath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/2510abfdf0c019baee8b296fbe4fb59426c6c0.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/2cd3f309080fb2ae64cbdfa02495c0ffffdf7d.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/39806cc196357892a02b6261a4c7d188b2117b56.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/5e97965a8a5212898d1852ae08f40373d5fb5a7.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/5ef64a24e1c55071a142a48f6d4f1a79a72aa20.Blob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/da39a3ee5e6b4bd3255bfef95601890afd879.Tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/e8bf976739a6d6cc264e1a7f888b5558680.Tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" afterDir="false" />
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;调试通过了GC&quot;">
+      <change afterPath="$PROJECT_DIR$/src/core/JitStatus.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/branches/branchMap" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/branchMap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/index/trackedBlob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/index/trackedBlob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/commander/CLI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/commander/CLI.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitGC.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitGC.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/JitGC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitGC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/commander/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commander/CLI.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitBranch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitBranch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/indexoperation/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/indexoperation/Index.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +67,7 @@
     <configuration name="CLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="commander.CLI" />
       <module name="jit-first-delivery" />
-      <option name="PROGRAM_PARAMETERS" value="git gc" />
+      <option name="PROGRAM_PARAMETERS" value="git status" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="commander.*" />
@@ -208,7 +201,7 @@
       <workItem from="1640698997232" duration="504000" />
       <workItem from="1641355583885" duration="12658000" />
       <workItem from="1641373481092" duration="18188000" />
-      <workItem from="1641397200805" duration="5150000" />
+      <workItem from="1641397200805" duration="6237000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -420,7 +413,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641401503596</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="commit -m &quot;调试通过了GC&quot;">
+      <created>1641402500575</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1641402500575</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -440,7 +440,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit -m &quot;添加并测试了新的压缩与解压缩模块Zip，替换了原来的Zlib&quot;" />
     <MESSAGE value="commit -m &quot;序列化与反序列化功能改进，对树改革前存档&quot;" />
     <MESSAGE value="commit -m &quot;对Tree，Commit彻底改革，建立了Index暂存区，并在新的基础上简历了add方法与commit方法&quot;" />
     <MESSAGE value="commit -m &quot;增加了jit rm方法&quot;" />
@@ -465,7 +464,8 @@
     <MESSAGE value="commit -m &quot;增加了垃圾回收功能&quot;" />
     <MESSAGE value="commit -m &quot;增加了垃圾回收功能合并了merge和diff&quot;" />
     <MESSAGE value="commit -m &quot;调试通过了merge&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;调试通过了merge&quot;" />
+    <MESSAGE value="commit -m &quot;调试通过了GC&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;调试通过了GC&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
