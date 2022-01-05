@@ -2,12 +2,12 @@ package commander;
 
 import java.io.File;
 import java.io.IOException;
-import java.util.LinkedList;
+
 import java.util.Scanner;
 
 
 import core.*;
-import gitobject.*;
+
 
 
 public class CLI
@@ -235,15 +235,15 @@ public class CLI
 			else
 			{
 				int times = Integer.parseInt(args[3]);
-				if(args[2].equals("--mixed"))
+				if(args[2].equals("-mixed"))
 				{
 					JitReset.resetMixed(times);
 				}
-				else if(args[2].equals("--hard"))
+				else if(args[2].equals("-hard"))
 				{
 					JitReset.resetHard(times);
 				}
-				else if(args[2].equals("--super"))
+				else if(args[2].equals("-super"))
 				{
 					JitReset.resetSuper(times);
 				}

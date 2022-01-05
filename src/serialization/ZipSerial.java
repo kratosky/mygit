@@ -8,7 +8,7 @@ import java.util.zip.GZIPOutputStream;
 /**
  * 这个类用于对对象的压缩存入，与读取
  */
-public class ZipSerial
+abstract public class ZipSerial
 {
     /**把一个可序列化的对象压缩写入制定路径下的文件中
      *

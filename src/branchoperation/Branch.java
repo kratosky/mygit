@@ -1,6 +1,7 @@
 package branchoperation;
 
 import fileoperation.FileReader;
+import gitobject.Commit;
 
 import java.io.*;
 import java.util.HashMap;
@@ -53,6 +54,27 @@ public class Branch
         oo.writeObject(branchMap);
         oo.flush();
         oo.close();
+    }
+
+    /**
+     * 从给定的branch中返回最后一个Commit
+     * @param branch
+     * @return
+     * @throws Exception
+     */
+    public static Commit getLastCommit(String branch) throws Exception
+    {
+        Map<String, String> branchMap = Branch.getBranchMap();
+        if(!branchMap.containsKey(branch))
+        {
+            System.out.println("分支名不存在");
+            return null;
+        }
+        else
+        {
+            Commit last = Commit.deserialize(branchMap.get(branch));
+            return last;
+        }
     }
 
     /**

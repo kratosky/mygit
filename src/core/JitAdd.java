@@ -17,8 +17,7 @@ public class JitAdd
      */
     public static void add(String relevantPath) throws Exception
     {
-        /* Todo: You should pass the filename in this function, and generate a hash file in your repository.
-         *   Add your code here.*/
+        /* Todo: You should pass the filename in this function, and generate a hash file in your repository.*/
         // 这里要判断blob或tree对象，并调用响应的hash计算
         File file = new File(relevantPath);
         if(file.isFile())
