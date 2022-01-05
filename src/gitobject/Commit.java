@@ -3,12 +3,11 @@ package gitobject;
 import java.io.*;
 import java.util.Map;
 
+import branchoperation.Branch;
 import fileoperation.FileDeletion;
 import fileoperation.FileReader;
 import indexoperation.Index;
-import serialization.ZipSerial;
 import sha1.SHA1;
-import jitinitiation.JitInitiation;
 
 public class Commit extends GitObject
 {
@@ -56,7 +55,7 @@ public class Commit extends GitObject
         treeToCommit.compressSerialize();
 
         //清空暂存区
-        JitInitiation.initIndex();
+        Index.initIndex();
 
         //清空".jit/ToCommit"文件夹
         FileDeletion.emptyDirec(recoverCommit);
@@ -80,7 +79,7 @@ public class Commit extends GitObject
 
         //生成commit对象的哈希值赋给key
         this.key = SHA1.hashString(hashvalue);
-        this.parent = getParentSerialName();
+        this.parent = updateBranch();
 
         //将commitTree, parent, author, committer, message信息写入value之中，用于对commit对象哈希码的生成
         /*Content of this commit, like this:
@@ -114,31 +113,35 @@ public class Commit extends GitObject
     }
 
     /**
-     * Get the parent commit from the HEAD file.
+     * 将本次commit更新到branchMap中，同时返回上一次的commit序列化文件名
      * @return
      * @throws IOException
      */
-    private String getParentSerialName() throws Exception
+    private String updateBranch() throws Exception
     {
         File HEAD = new File(".jit" + File.separator + "branches"+File.separator+"HEAD.txt");
         String branchName = FileReader.getContent(HEAD);
-        Map<String, String> branchMap = ZipSerial.getBranchMap();
+        Map<String, String> branchMap = Branch.getBranchMap();
         //通常情况下有前驱结点，从而更新branch
         if (branchMap.containsKey(branchName))
         {
             String parent = branchMap.get(branchName);
             branchMap.replace(branchName, this.getKey() + "." + this.getFmt());
-            ZipSerial.setBranchMap(branchMap);
+            Branch.setBranchMap(branchMap);
             return parent;
         }
         //初始化master branch
         else
         {
             branchMap.put("master", this.getKey() + "." + this.getFmt());
-            ZipSerial.setBranchMap(branchMap);
+            Branch.setBranchMap(branchMap);
             return null;
         }
     }
+
+
+
+
 
 
     /**
@@ -148,14 +151,16 @@ public class Commit extends GitObject
      */
     public Commit getParentCommit() throws Exception
     {
-        Commit parentCommit =new Commit();
         //如果不是头结点的话
         if(this.getParent()!=null)
         {
-             parentCommit = Commit.deserialize(this.getParent());
+            Commit parentCommit = Commit.deserialize(this.getParent());
+            return parentCommit;
         }
-        return parentCommit;
-
+        else
+        {
+            return null;
+        }
     }
 
     /**
@@ -165,14 +170,29 @@ public class Commit extends GitObject
      */
     public Tree getTree() throws Exception
     {
-        Tree commitTree =new Tree();
+
         if(this.getFmt()!=null)
         {
-            commitTree = Tree.deserialize(this.getTreeSerial());
-
+            Tree commitTree = Tree.deserialize(this.getTreeSerial());
+            return commitTree;
         }
-        return commitTree;
+        else
+        {
+            return null;
+        }
+
     }
+
+    /**
+     *
+     * @throws Exception
+     */
+    public void recoverCommit(String recoverPath) throws Exception
+    {
+        Tree commitTree = this.getTree();
+        commitTree.treeToDirec(recoverPath);
+    }
+
 
 }
 

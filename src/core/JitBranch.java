@@ -1,9 +1,7 @@
 package core;
 
+import branchoperation.Branch;
 import fileoperation.FileReader;
-import gitobject.Blob;
-import jitinitiation.JitInitiation;
-import serialization.ZipSerial;
 
 import java.io.File;
 import java.util.Map;
@@ -12,7 +10,7 @@ public class JitBranch
 {
     public static void branch(String branch) throws Exception
     {
-        Map<String, String> branchMap = ZipSerial.getBranchMap();
+        Map<String, String> branchMap = Branch.getBranchMap();
         //分支名不存在则将其存进
         if (!branchMap.containsKey(branch))
         {
@@ -20,7 +18,7 @@ public class JitBranch
             String currentBranchName = FileReader.getContent(HEAD);
             String currentCommit = branchMap.get(currentBranchName);
             branchMap.put(branch,currentCommit);
-            ZipSerial.setBranchMap(branchMap);
+            Branch.setBranchMap(branchMap);
             System.out.printf("%s 分支已已经成功创建！\n", branch);
         }
         //分支名已经存在，创建分支失败！
@@ -35,7 +33,7 @@ public class JitBranch
     public static void showBranch() throws Exception
     {
         //分别展示每一个分支
-        Map<String, String> branchMap = ZipSerial.getBranchMap();
+        Map<String, String> branchMap = Branch.getBranchMap();
         branchMap.forEach((branchName,commitSerialFileName) ->
         {
             System.out.println(branchName + "       " +  commitSerialFileName);
@@ -48,7 +46,7 @@ public class JitBranch
 
     public static void delBranch(String branch) throws Exception
     {
-        Map<String, String> branchMap = ZipSerial.getBranchMap();
+        Map<String, String> branchMap = Branch.getBranchMap();
         //分支名存在则将其删除
         if (branchMap.containsKey(branch))
         {
@@ -62,7 +60,7 @@ public class JitBranch
             else
             {
                 branchMap.remove(branch);
-                ZipSerial.setBranchMap(branchMap);
+                Branch.setBranchMap(branchMap);
             }
         }
         //分支名不存在，删除分支失败！

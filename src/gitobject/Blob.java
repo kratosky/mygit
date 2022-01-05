@@ -36,18 +36,18 @@ public class Blob extends GitObject
     {
         try
         {
-            System.out.println(relevantPath);
-            String[] relepath = relevantPath.split("/");
+            //System.out.println(relevantPath);
+            String[] relepath = this.relevantPath.split("/");
             //将路径参数用文件分隔符连在一起，生成有效的路径，并用该有效路径创建文件夹套娃
             for(int i = 0; i < relepath.length-1; i++)
             {
                 parentPath += "/" + relepath[i];
             }
-            System.out.println(parentPath);
+            //System.out.println(parentPath);
             new File(parentPath).mkdirs();//一路的文件夹都被创建
             //d如果传入的文件路径是一个文件夹，则报错x
             String filename = parentPath + '/' + relepath[relepath.length-1];
-            System.out.println(filename);
+            //System.out.println(filename);
 
 
             File file = new File(filename);

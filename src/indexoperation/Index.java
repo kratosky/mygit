@@ -5,6 +5,7 @@ import jitinitiation.JitInitiation;
 import serialization.ZipSerial;
 
 import java.io.*;
+import java.util.HashMap;
 import java.util.Map;
 
 public class Index
@@ -20,6 +21,27 @@ public class Index
         ObjectInputStream oi = new ObjectInputStream(new FileInputStream(this.indexFile));
         this.indexMap = (Map<String, String>)oi.readObject();
         oi.close();
+    }
+
+    /**
+     * 初始化index区
+     */
+    public static void initIndex()
+    {
+        try
+        {
+            //初始化生成暂存区内序列化的hashMap，键为相对路径加文件名，值为其在“.jit/objects”文件夹中对应文件名，文件名叫“trackedBlob”
+            Map<String,String> testmap = new HashMap<>();
+            File indexFile = new File( ".jit" + File.separator + "index" + File.separator +"trackedBlob" );
+            ObjectOutputStream oo = new ObjectOutputStream(new FileOutputStream(indexFile));
+            oo.writeObject(testmap);
+            oo.flush();
+            oo.close();
+        }
+        catch (IOException e)
+        {
+            e.printStackTrace();
+        }
     }
 
     /**

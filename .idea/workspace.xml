@@ -1,13 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;修复了reset&quot;">
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;将Tocommit修改为recoverCommit 用于后序的checkout 和reset&quot;">
+      <change afterPath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/8d81f1daf93288a8d706b3d64abecbda656f8a5.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/e50e7483f493a8c4266efb6de1622eca13a8511.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/branchoperation/Branch.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitAdd.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitAdd.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fileoperation/FileDeletion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/fileoperation/FileDeletion.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/branches/branchMap" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/branchMap" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitBranch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitBranch.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitCheckout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitCheckout.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitLog.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/gitobject/Blob.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/gitobject/Blob.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/gitobject/Commit.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/gitobject/Commit.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/indexoperation/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/indexoperation/Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/jitinitiation/JitInitiation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/jitinitiation/JitInitiation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/serialization/ZipSerial.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/serialization/ZipSerial.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitBranch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitBranch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitCheckout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitCheckout.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitCommit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitCommit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gitobject/Blob.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitobject/Blob.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/gitobject/Commit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitobject/Commit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/indexoperation/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/indexoperation/Index.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/jitinitiation/JitInitiation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/jitinitiation/JitInitiation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/delTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/delTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/serialization/ZipSerial.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/serialization/ZipSerial.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +72,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
+      <recent name="branchoperation.Branch" />
       <recent name="indexoperation.Index" />
       <recent name="fileoperation.FileReader" />
     </key>
@@ -63,7 +84,7 @@
     <configuration name="CLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="commander.CLI" />
       <module name="jit-first-delivery" />
-      <option name="PROGRAM_PARAMETERS" value="git init" />
+      <option name="PROGRAM_PARAMETERS" value="git checkout master" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="commander.*" />
@@ -195,7 +216,7 @@
       <workItem from="1640609912016" duration="1964000" />
       <workItem from="1640614949776" duration="161000" />
       <workItem from="1640698997232" duration="504000" />
-      <workItem from="1641355583885" duration="6092000" />
+      <workItem from="1641355583885" duration="10916000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -358,7 +379,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641362503258</updated>
     </task>
-    <option name="localTasksCounter" value="24" />
+    <task id="LOCAL-00024" summary="commit -m &quot;将Tocommit修改为recoverCommit 用于后序的checkout 和reset&quot;">
+      <created>1641366589309</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1641366589309</updated>
+    </task>
+    <option name="localTasksCounter" value="25" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -398,7 +426,8 @@
     <MESSAGE value="commit -m &quot;配置好了reset 三个档的接口&quot;" />
     <MESSAGE value="commit -m &quot;增加了index类&quot;" />
     <MESSAGE value="commit -m &quot;修复了reset&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;修复了reset&quot;" />
+    <MESSAGE value="commit -m &quot;将Tocommit修改为recoverCommit 用于后序的checkout 和reset&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;将Tocommit修改为recoverCommit 用于后序的checkout 和reset&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

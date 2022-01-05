@@ -1,9 +1,8 @@
 package core;
 
+import branchoperation.Branch;
 import fileoperation.FileReader;
 import gitobject.Commit;
-import jitinitiation.JitInitiation;
-import serialization.ZipSerial;
 
 import java.io.File;
 import java.util.Map;
@@ -14,7 +13,7 @@ public class JitLog
     {
         File HEAD = new File(".jit" + File.separator + "branches"+File.separator+"HEAD.txt");
         String branchName = FileReader.getContent(HEAD);
-        Map<String, String> branchMap = ZipSerial.getBranchMap();
+        Map<String, String> branchMap = Branch.getBranchMap();
         //通常情况下有前驱结点，则逐个打印value并向前走
         if (branchMap.containsKey(branchName))
         {

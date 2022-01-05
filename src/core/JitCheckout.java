@@ -1,8 +1,8 @@
 package core;
 
+import branchoperation.Branch;
 import fileoperation.FileReader;
-import jitinitiation.JitInitiation;
-import serialization.ZipSerial;
+import gitobject.Commit;
 
 import java.io.File;
 import java.io.FileWriter;
@@ -12,7 +12,7 @@ public class JitCheckout
 {
     public static void checkout(String branch) throws Exception
     {
-        Map<String, String> branchMap = ZipSerial.getBranchMap();
+        Map<String, String> branchMap = Branch.getBranchMap();
         //分支名存在则判断是否为当前HEAD指针所指branch
         if (branchMap.containsKey(branch))
         {
@@ -30,6 +30,9 @@ public class JitCheckout
                 fileWriter.write(branch);
                 fileWriter.close();
                 System.out.printf("成功checkout到%s分支！\n", branch);
+                Commit checkTo = Commit.deserialize(branchMap.get(branch));
+                checkTo.recoverCommit(".jit/recoverCommit");
+                System.out.printf("已将该分支最新commit文件恢复到recoverCommit文件夹！\n");
             }
         }
         //分支名不存在，checkout失败！

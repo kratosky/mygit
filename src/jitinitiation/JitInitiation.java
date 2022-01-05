@@ -1,8 +1,9 @@
 package jitinitiation;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.Map;
+
+import branchoperation.Branch;
+import indexoperation.Index;
 
 import fileoperation.*;
 
@@ -78,50 +79,15 @@ public class JitInitiation
         FileCreation.createDirectory(gitDir, "branches");
         //生成头指针
         FileCreation.createFile(gitDir+File.separator+ "branches", "HEAD.txt", "master");//初始时没有HEAD指针，提交后才初始化
-        initBranches();
+        Branch.initBranches();
 
         FileCreation.createDirectory(gitDir, "objects");
-        FileCreation.createDirectory(gitDir, "restoreCommit");
+        FileCreation.createDirectory(gitDir, "recoverCommit");
 
         FileCreation.createDirectory(gitDir, "index");// 暂存区
-        initIndex();
+        Index.initIndex();
         return true;//全部创建成功，则返回true
     }
 
-    public static void initIndex()
-    {
-        try
-        {
-            //初始化生成暂存区内序列化的hashMap，键为相对路径加文件名，值为其在“.jit/objects”文件夹中对应文件名，文件名叫“trackedBlob”
-            Map<String,String> testmap = new HashMap<>();
-            File indexFile = new File( ".jit" + File.separator + "index" + File.separator +"trackedBlob" );
-            ObjectOutputStream oo = new ObjectOutputStream(new FileOutputStream(indexFile));
-            oo.writeObject(testmap);
-            oo.flush();
-            oo.close();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
 
-
-    public static void initBranches()
-    {
-        try
-        {
-            //初始化生成branches序列化的hashMap，键为分支名，值为其所指向的commit序列化文件名，文件名叫“branchMap”
-            Map<String,String> testmap = new HashMap<>();
-            File indexFile = new File( ".jit" + File.separator + "branches" + File.separator +"branchMap" );
-            ObjectOutputStream oo = new ObjectOutputStream(new FileOutputStream(indexFile));
-            oo.writeObject(testmap);
-            oo.flush();
-            oo.close();
-        }
-        catch (IOException e)
-        {
-            e.printStackTrace();
-        }
-    }
 }
