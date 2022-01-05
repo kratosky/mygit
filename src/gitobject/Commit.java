@@ -25,7 +25,7 @@ public class Commit extends GitObject
     public String getCommitter(){return committer;}
     public String getMessage(){return message;}
 
-    public Commit(){ this.fmt = null;}
+
     /**
      * Construct a commit directly from a file.
      * @param
@@ -42,15 +42,15 @@ public class Commit extends GitObject
         this.committer = committer;
         this.message = message;
 
-        //将暂存区的多个文件在清空后的".jit/recoverCommit"文件夹下恢复为带有文件夹的文件系统
-        File recoverCommit = new File(".jit/recoverCommit");
-        FileDeletion.emptyDirec(recoverCommit);
-        Index.recoverWork(".jit/recoverCommit");
+        //将暂存区的多个文件在清空后的".jit/restoreCommit"文件夹下恢复为带有文件夹的文件系统
+        File restoreCommit = new File(".jit/restoreCommit");
+        FileDeletion.emptyDirec(restoreCommit);
+        Index.restoreWork(".jit/restoreCommit");
 
 
-        //将".jit/recoverCommit"文件夹生成一颗树,并存入".jit/objects"（一定要在清空暂存区之前）
+        //将".jit/restoreCommit"文件夹生成一颗树,并存入".jit/objects"（一定要在清空暂存区之前）
 
-        Tree treeToCommit = new Tree(recoverCommit,".jit/recoverCommit");
+        Tree treeToCommit = new Tree(restoreCommit,".jit/restoreCommit");
         this.commitTree = treeToCommit.getKey()+"."+treeToCommit.getFmt();
         treeToCommit.compressSerialize();
 
@@ -58,7 +58,7 @@ public class Commit extends GitObject
         Index.initIndex();
 
         //清空".jit/ToCommit"文件夹
-        FileDeletion.emptyDirec(recoverCommit);
+        FileDeletion.emptyDirec(restoreCommit);
 
         //将生成的树的序列化文件的文件名赋给本次Commit对象的commitTree属性
         this.commitTree = treeToCommit.getKey()+"."+treeToCommit.getFmt();
@@ -119,8 +119,7 @@ public class Commit extends GitObject
      */
     private String updateBranch() throws Exception
     {
-        File HEAD = new File(".jit" + File.separator + "branches"+File.separator+"HEAD.txt");
-        String branchName = FileReader.getContent(HEAD);
+        String branchName = Branch.getCurrentBranch();
         Map<String, String> branchMap = Branch.getBranchMap();
         //通常情况下有前驱结点，从而更新branch
         if (branchMap.containsKey(branchName))
@@ -170,27 +169,29 @@ public class Commit extends GitObject
      */
     public Tree getTree() throws Exception
     {
-
-        if(this.getFmt()!=null)
-        {
-            Tree commitTree = Tree.deserialize(this.getTreeSerial());
-            return commitTree;
-        }
-        else
-        {
-            return null;
-        }
-
+        Tree commitTree = Tree.deserialize(this.getTreeSerial());
+        return commitTree;
     }
 
     /**
-     *
+     * 将commit的文件恢复到指定路径
+     * @param restorePath
      * @throws Exception
      */
-    public void recoverCommit(String recoverPath) throws Exception
+    public void restoreCommitFiles(String restorePath) throws Exception
     {
         Tree commitTree = this.getTree();
-        commitTree.treeToDirec(recoverPath);
+        commitTree.treeToDirec(restorePath);
+    }
+
+    /**
+     * 将commit的文件恢复到暂存区
+     * @throws Exception
+     */
+    public void restoreCommitIndex() throws Exception
+    {
+        Tree commitTree = this.getTree();
+        commitTree.treeToIndex();
     }
 
 

@@ -18,7 +18,7 @@ public class JitCheckout
         {
             File HEAD = new File(".jit" + File.separator + "branches"+File.separator+"HEAD.txt");
             String currentBranchName = FileReader.getContent(HEAD);
-            //要checkout的分支为当前所在分支时，什么也不用做，给出提醒
+            //要checkout的分支为当前所在分支时，给出提醒,
             if(currentBranchName.equals(branch))
             {
                 System.out.printf("要checkout的%s分支为当前所在分支！\n", branch);
@@ -30,10 +30,11 @@ public class JitCheckout
                 fileWriter.write(branch);
                 fileWriter.close();
                 System.out.printf("成功checkout到%s分支！\n", branch);
-                Commit checkTo = Commit.deserialize(branchMap.get(branch));
-                checkTo.recoverCommit(".jit/recoverCommit");
-                System.out.printf("已将该分支最新commit文件恢复到recoverCommit文件夹！\n");
             }
+            //无论checkout的是不是当前分支，都将该分支最新commit版本恢复到restoreCommit文件夹
+            Commit checkTo = Commit.deserialize(branchMap.get(branch));
+            checkTo.restoreCommitFiles(".jit/restoreCommit");
+            System.out.printf("已将该分支最新commit版本恢复到restoreCommit文件夹！\n");
         }
         //分支名不存在，checkout失败！
         else

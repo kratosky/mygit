@@ -69,12 +69,12 @@ public class Index
         oo.close();
     }
 
-    public static void recoverWork(String recoverPath) throws Exception
+    public static void restoreWork(String restorePath) throws Exception
     {
         Map<String, String> indexMap = Index.getIndexMap();
         indexMap.forEach((relevantPath,serialFileName) ->
         {
-            try { Blob.deserialize(serialFileName).toFile(recoverPath);}
+            try { Blob.deserialize(serialFileName).toFile(restorePath);}
             catch (Exception e) { e.printStackTrace();}
         });
     }

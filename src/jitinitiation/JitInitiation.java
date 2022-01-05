@@ -82,7 +82,7 @@ public class JitInitiation
         Branch.initBranches();
 
         FileCreation.createDirectory(gitDir, "objects");
-        FileCreation.createDirectory(gitDir, "recoverCommit");
+        FileCreation.createDirectory(gitDir, "restoreCommit");
 
         FileCreation.createDirectory(gitDir, "index");// 暂存区
         Index.initIndex();

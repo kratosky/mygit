@@ -1,5 +1,7 @@
 package branchoperation;
 
+import fileoperation.FileReader;
+
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
@@ -52,4 +54,17 @@ public class Branch
         oo.flush();
         oo.close();
     }
+
+    /**
+     * 获得当前的branch
+     * @return
+     * @throws Exception
+     */
+    public static String getCurrentBranch() throws Exception
+    {
+        File HEAD = new File(".jit" + File.separator + "branches"+File.separator+"HEAD.txt");
+        String branchName = FileReader.getContent(HEAD);
+        return branchName;
+    }
+
 }

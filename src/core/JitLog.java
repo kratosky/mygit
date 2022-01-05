@@ -11,21 +11,18 @@ public class JitLog
 {
     public static void log() throws Exception
     {
-        File HEAD = new File(".jit" + File.separator + "branches"+File.separator+"HEAD.txt");
-        String branchName = FileReader.getContent(HEAD);
+        String branchName = Branch.getCurrentBranch();
         Map<String, String> branchMap = Branch.getBranchMap();
         //通常情况下有前驱结点，则逐个打印value并向前走
         if (branchMap.containsKey(branchName))
         {
             Commit iter =Commit.deserialize(branchMap.get(branchName));
 
-            while(iter.getFmt()!=null)
+            while(iter!=null)
             {
                 System.out.println(iter.getValue());
                 System.out.println("\n-----------------------------------------------------------------------------------------------------------------------\n");
                 iter = iter.getParentCommit();
-                System.out.println(iter.getFmt());
-
             }
             System.out.println("已经遍历完毕！");
         }
