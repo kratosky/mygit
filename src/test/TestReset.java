@@ -45,7 +45,9 @@ public class TestReset
         {
             e.printStackTrace();
         }
-        CLI.main("git reset -super 1".split(" "));
+        CLI.main("git reset -super 3".split(" "));
+        //super reset会导致当前分支倒数第一到倒数k-1commit不被branch跟踪，应及时作为垃圾清理
+        CLI.main("git gc".split(" "));
 
 
     }

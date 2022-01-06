@@ -1,40 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加并测试了功能git status&quot;">
-      <change afterPath="$PROJECT_DIR$/.jit/objects/5ef64a24e1c55071a142a48f6d4f1a79a72aa20.Blob" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestCommit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestGC.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestInit.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestMerge.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestReset.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/TestStatus.java" afterDir="false" />
+    <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了add rm reset commit 等测试类，同时改进了reset方法&quot;">
+      <change afterPath="$PROJECT_DIR$/.jit/objects/2ca3545b3b319b867d5b8f59045a03dec6af8.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/5998781b5b4b6f94b97ed6e6d2bdf155414d17c8.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/5fc42b3e51214128e95153e41bab7910a3113b.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/769cfecf3d2ca43ac95d467f115e65d7609d4368.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/a0f447166b4869974d28e49847f59d28615d22.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/c6b277bfb19c0c19edda52e2fddec635a57733.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/cdc2e2bf66c9ad7a2c18e25d075cfb641e4058.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/e50e7483f493a8c4266efb6de1622eca13a8511.Tree" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/branches/HEAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/HEAD.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/branches/branchMap" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/branchMap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/index/trackedBlob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/index/trackedBlob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/2510abfdf0c019baee8b296fbe4fb59426c6c0.Commit" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/2cd3f309080fb2ae64cbdfa02495c0ffffdf7d.Commit" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/5e97965a8a5212898d1852ae08f40373d5fb5a7.Commit" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/5ef64a24e1c55071a142a48f6d4f1a79a72aa20.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/5ef64a24e1c55071a142a48f6d4f1a79a72aa20.Blob" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/da39a3ee5e6b4bd3255bfef95601890afd879.Tree" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/commander/CLI.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/commander/CLI.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitBranch.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitBranch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/indexoperation/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/indexoperation/Index.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/test/StringTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/test/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/test/delTest.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/test/testBranchCheckout.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/test/testBranchCheckout.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/test/testLog.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/test/testLog.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/commander/CLI.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/commander/CLI.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/core/JitReset.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitReset.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/StringTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestAdd.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestSeparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/delTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestRm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testBranchCheckout.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestBranchCheckout.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/testLog.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestLog.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitReset.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitReset.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestGC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestGC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestMerge.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/TestStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestStatus.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,8 +92,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestAdd" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestAdd" />
+    <configuration name="TestCommit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestCommit" />
       <module name="jit-first-delivery" />
       <extension name="coverage">
         <pattern>
@@ -116,8 +105,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCommit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestCommit" />
+    <configuration name="TestGC" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestGC" />
+      <module name="jit-first-delivery" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="test.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestMerge" />
       <module name="jit-first-delivery" />
       <extension name="coverage">
         <pattern>
@@ -142,19 +144,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestRm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestRm" />
-      <module name="jit-first-delivery" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="TestSeparator" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="test.TestSeparator" />
       <module name="jit-first-delivery" />
@@ -168,8 +157,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestZip" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestZip" />
+    <configuration name="TestStatus" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestStatus" />
       <module name="jit-first-delivery" />
       <extension name="coverage">
         <pattern>
@@ -183,20 +172,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.CLI" />
-      <item itemvalue="Application.TestZip" />
       <item itemvalue="Application.TestSeparator" />
-      <item itemvalue="Application.TestAdd" />
-      <item itemvalue="Application.TestRm" />
       <item itemvalue="Application.TestCommit" />
       <item itemvalue="Application.TestReset" />
+      <item itemvalue="Application.TestMerge" />
+      <item itemvalue="Application.TestStatus" />
+      <item itemvalue="Application.TestGC" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.TestReset" />
+        <item itemvalue="Application.TestGC" />
+        <item itemvalue="Application.TestStatus" />
+        <item itemvalue="Application.TestMerge" />
         <item itemvalue="Application.TestCommit" />
-        <item itemvalue="Application.TestRm" />
-        <item itemvalue="Application.TestZip" />
-        <item itemvalue="Application.TestAdd" />
       </list>
     </recent_temporary>
   </component>
@@ -225,7 +214,7 @@
       <workItem from="1641355583885" duration="12658000" />
       <workItem from="1641373481092" duration="18188000" />
       <workItem from="1641397200805" duration="6291000" />
-      <workItem from="1641403851424" duration="4896000" />
+      <workItem from="1641403851424" duration="5820000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -451,7 +440,14 @@
       <option name="project" value="LOCAL" />
       <updated>1641403546366</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="commit -m &quot;增加了add rm reset commit 等测试类，同时改进了reset方法&quot;">
+      <created>1641448268270</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1641448268270</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -471,7 +467,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
-    <MESSAGE value="commit -m &quot;对Tree，Commit彻底改革，建立了Index暂存区，并在新的基础上简历了add方法与commit方法&quot;" />
     <MESSAGE value="commit -m &quot;增加了jit rm方法&quot;" />
     <MESSAGE value="commit -m &quot;彻底改造Tree类型，将其中Arraylist变成TreeMap，并修改了与之相关的方法，大大提升了objects空间存储效率&quot;" />
     <MESSAGE value="commit -m &quot;进一步优化了生成treeMap的方法&quot;" />
@@ -496,7 +491,8 @@
     <MESSAGE value="commit -m &quot;调试通过了merge&quot;" />
     <MESSAGE value="commit -m &quot;调试通过了GC&quot;" />
     <MESSAGE value="commit -m &quot;增加并测试了功能git status&quot;" />
-    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;增加并测试了功能git status&quot;" />
+    <MESSAGE value="commit -m &quot;增加了add rm reset commit 等测试类，同时改进了reset方法&quot;" />
+    <option name="LAST_COMMIT_MESSAGE" value="commit -m &quot;增加了add rm reset commit 等测试类，同时改进了reset方法&quot;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -510,6 +506,11 @@
           <url>file://$PROJECT_DIR$/src/test/TestAdd.java</url>
           <line>4</line>
           <option name="timeStamp" value="2" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/TestGC.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
