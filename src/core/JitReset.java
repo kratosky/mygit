@@ -16,6 +16,7 @@ public class JitReset
         if(toRestore != null)
         {
             toRestore.restoreCommitIndex();
+            System.out.println("已经成功将倒数第"+n+"次commit内容恢复到暂存区！");
         }
     }
 
@@ -26,6 +27,7 @@ public class JitReset
         {
             toRestore.restoreCommitIndex();
             toRestore.restoreCommitFiles(".jit/restoreCommit");
+            System.out.println("已经成功将倒数第"+n+"次commit内容恢复到暂存区以及restorCommit文件夹中！");
         }
     }
 
@@ -39,6 +41,7 @@ public class JitReset
             Map<String,String> branchmap = Branch.getBranchMap();
             branchmap.put(Branch.getCurrentBranch(),toRestore.getKey()+'.'+toRestore.getFmt());
             Branch.setBranchMap(branchmap);
+            System.out.println("已经成功将倒数第"+n+"次commit内容恢复到暂存区以及restorCommit文件夹中，同时当前分支也回退到这次提交！");
         }
     }
 
@@ -56,7 +59,7 @@ public class JitReset
         if (branchMap.containsKey(currentBranch))
         {
             Commit iter = Commit.deserialize(branchMap.get(currentBranch));
-            for (int i = 1; 1 < n; i++)
+            for (int i = 1; i < n; i++)
             {
                 iter = iter.getParentCommit();
                 if ((iter == null))

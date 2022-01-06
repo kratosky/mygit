@@ -3,8 +3,8 @@ package test;
 import fileoperation.FileDeletion;
 
 import java.io.*;
-
-public class Test
+//分别测试了\\ /以及File.separator的性质
+public class TestSeparator
 {
     public static void main(String[] args)throws Exception
     {
@@ -20,10 +20,6 @@ public class Test
 
         String[] name = dir3.getCanonicalPath().replace(File.separator, " ").split(" ");
         System.out.println(name[name.length-1]);
-
-
-
-
 
 
     }

@@ -2,7 +2,7 @@ package test;
 
 import core.*;
 
-public class testBranchCheckout
+public class TestBranchCheckout
 {
     public static void main(String[] args) throws Exception
     {

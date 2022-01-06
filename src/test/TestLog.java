@@ -9,7 +9,7 @@ import java.io.File;
 import java.io.IOException;
 import core.JitCommit;
 
-public class testLog
+public class TestLog
 {
 
         public static void main(String[] args) throws Exception

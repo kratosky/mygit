@@ -132,7 +132,7 @@ public class CLI
 			System.out.println("请输入提交信息：");
 			String message = input.nextLine();
 			JitCommit.commit(author, commiter,message);*/
-			JitCommit.commit("ddx","ddx","ddx");
+			JitCommit.commit("ddx","ddx","yhc is my son!");
 		}
 		catch (Exception e)
 		{
@@ -230,15 +230,15 @@ public class CLI
 									"\r\n" +
 									"jit reset --super ([--recursionTimes]): Reset the head, current branch and above to the commit n times before.");
 				}
-				else if(args[2].equals("--mixed"))
+				else if(args[2].equals("-mixed"))
 				{
 					JitReset.resetMixed(1);
 				}
-				else if(args[2].equals("--hard"))
+				else if(args[2].equals("-hard"))
 				{
 					JitReset.resetHard(1);
 				}
-				else if(args[2].equals("--super"))
+				else if(args[2].equals("-super"))
 				{
 					JitReset.resetSuper(1);
 				}
