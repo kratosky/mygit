@@ -2,28 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="528ff444-720e-4f5c-b848-c6c281b0baef" name="Changes" comment="commit -m &quot;增加了add rm reset commit 等测试类，同时改进了reset方法&quot;">
-      <change afterPath="$PROJECT_DIR$/.jit/objects/2ca3545b3b319b867d5b8f59045a03dec6af8.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/5998781b5b4b6f94b97ed6e6d2bdf155414d17c8.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/5fc42b3e51214128e95153e41bab7910a3113b.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/769cfecf3d2ca43ac95d467f115e65d7609d4368.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/a0f447166b4869974d28e49847f59d28615d22.Tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/c6b277bfb19c0c19edda52e2fddec635a57733.Tree" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/cdc2e2bf66c9ad7a2c18e25d075cfb641e4058.Commit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.jit/objects/e50e7483f493a8c4266efb6de1622eca13a8511.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/311cdc1aa1da580f2d13de9dbfeae831deafbd.Blob" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/68d557eedcf023a42fa0dafabaa5fb737d8ea0.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/8d48c9bf765da72f06f4d38c7b9a549a9881a8.Commit" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/objects/efa738ce1d696e17bdaed46c56288183d1e21ce.Tree" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.jit/restoreCommit/tiger.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/branches/HEAD.txt" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/HEAD.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/branches/branchMap" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/branches/branchMap" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/index/trackedBlob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/index/trackedBlob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/5ef64a24e1c55071a142a48f6d4f1a79a72aa20.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/5ef64a24e1c55071a142a48f6d4f1a79a72aa20.Blob" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/1cd265b2e0c33a34db95aa29f81ffd1286a2ada.Blob" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/3760a9d93834ac223fdae1faec46f2f8021c7.Blob" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/608be78b4032b4dcfbaa13f59c0a48c10d85037.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitReset.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/core/JitReset.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestGC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestGC.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestInit.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestMerge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestMerge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/TestStatus.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/TestStatus.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/c6b277bfb19c0c19edda52e2fddec635a57733.Tree" beforeDir="false" afterPath="$PROJECT_DIR$/.jit/objects/c6b277bfb19c0c19edda52e2fddec635a57733.Tree" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/e50e7483f493a8c4266efb6de1622eca13a8511.Tree" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/objects/fddbe01857e2d3ab505bfc1dac3b38a2c8b8cd65.Blob" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/farm/whatthehell.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/lily.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/tim/哈哈哈.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.jit/restoreCommit/what/turtle.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/jit-first-delivery/indexoperation/Index.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/jit-first-delivery/indexoperation/Index.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/core/JitGC.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/core/JitGC.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/gitobject/GitObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/gitobject/GitObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/indexoperation/Index.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/indexoperation/Index.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tiger.txt" beforeDir="false" afterPath="$PROJECT_DIR$/tiger.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,11 +78,11 @@
       <recent name="commander" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.TestReset">
+  <component name="RunManager" selected="Application.TestGC">
     <configuration name="CLI" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="commander.CLI" />
       <module name="jit-first-delivery" />
-      <option name="PROGRAM_PARAMETERS" value="git status" />
+      <option name="PROGRAM_PARAMETERS" value="git merge master" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="commander.*" />
@@ -92,8 +93,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestCommit" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestCommit" />
+    <configuration name="TestBranchCheckout" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestBranchCheckout" />
       <module name="jit-first-delivery" />
       <extension name="coverage">
         <pattern>
@@ -118,8 +119,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestMerge" />
+    <configuration name="TestLog" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestLog" />
       <module name="jit-first-delivery" />
       <extension name="coverage">
         <pattern>
@@ -131,9 +132,10 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestReset" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="test.TestReset" />
+    <configuration name="TestMerge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="test.TestMerge" />
       <module name="jit-first-delivery" />
+      <option name="PROGRAM_PARAMETERS" value="git init" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="test.*" />
@@ -173,19 +175,19 @@
     <list>
       <item itemvalue="Application.CLI" />
       <item itemvalue="Application.TestSeparator" />
-      <item itemvalue="Application.TestCommit" />
-      <item itemvalue="Application.TestReset" />
-      <item itemvalue="Application.TestMerge" />
       <item itemvalue="Application.TestStatus" />
+      <item itemvalue="Application.TestMerge" />
+      <item itemvalue="Application.TestLog" />
+      <item itemvalue="Application.TestBranchCheckout" />
       <item itemvalue="Application.TestGC" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TestReset" />
         <item itemvalue="Application.TestGC" />
-        <item itemvalue="Application.TestStatus" />
+        <item itemvalue="Application.TestBranchCheckout" />
+        <item itemvalue="Application.TestLog" />
         <item itemvalue="Application.TestMerge" />
-        <item itemvalue="Application.TestCommit" />
+        <item itemvalue="Application.TestStatus" />
       </list>
     </recent_temporary>
   </component>
@@ -215,6 +217,10 @@
       <workItem from="1641373481092" duration="18188000" />
       <workItem from="1641397200805" duration="6291000" />
       <workItem from="1641403851424" duration="5820000" />
+      <workItem from="1641450367664" duration="21810000" />
+      <workItem from="1642314405505" duration="1503000" />
+      <workItem from="1642422434556" duration="2821000" />
+      <workItem from="1642577412908" duration="488000" />
     </task>
     <task id="LOCAL-00001" summary="commit -m &quot;彻底优化并重构整合了求哈希值模块&quot;">
       <created>1639920020330</created>
@@ -498,11 +504,6 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/TestBranchCheckout.java</url>
-          <line>4</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/TestAdd.java</url>
           <line>4</line>
           <option name="timeStamp" value="2" />
@@ -511,6 +512,16 @@
           <url>file://$PROJECT_DIR$/src/test/TestGC.java</url>
           <line>4</line>
           <option name="timeStamp" value="4" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/TestStatus.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/TestReset.java</url>
+          <line>4</line>
+          <option name="timeStamp" value="6" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

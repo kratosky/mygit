@@ -18,7 +18,7 @@ public abstract class GitObject implements Serializable
     protected static String path = JitInitiation.getGitDir() + File.separator + "objects";   //.jit文件夹中的objects文件夹之中
     protected String value;                //value of object
     protected String generated_time;        // it is used to record the time when the file is generated.
-    protected String relevantPath;          // tree和blob会用到，记录文件相对路径
+    protected String relevantPath;          // blob会用到，记录文件相对路径
 
 
 

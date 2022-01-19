@@ -93,7 +93,9 @@ public class Index
         Map<String, String> indexMap = Index.getIndexMap();
         indexMap.forEach((relevantPath,serialFileName) ->
         {
-            System.out.println(relevantPath + "     " + serialFileName);
+            try {System.out.println(relevantPath + "     " + serialFileName + "  created in "+Blob.deserialize(serialFileName).getTime());}
+            catch (Exception e) { e.printStackTrace();}
+
         });
     }
 

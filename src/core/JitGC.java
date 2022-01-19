@@ -65,15 +65,15 @@ public class JitGC
     /**
      * 对当前分支内的所有文件进行扫描，将出现的文件从set中删除
      * @param branchName
-     * @param objectMap
+     * @param objectSet
      * @throws Exception
      */
-    private static void scanBranch(String branchName,Set<String> objectMap) throws Exception
+    private static void scanBranch(String branchName,Set<String> objectSet) throws Exception
     {
         Commit iter = Branch.getLastCommit(branchName);
         while(iter!=null)
         {
-            scanCommit(iter,objectMap);
+            scanCommit(iter,objectSet);
             iter = iter.getParentCommit();
         }
 
@@ -82,26 +82,26 @@ public class JitGC
     /**
      * 对当前commit内的commit，commitTree和其中的blob从set删除
      * @param commit
-     * @param objectMap
+     * @param objectSet
      * @throws Exception
      */
-    private static void scanCommit(Commit commit,Set<String> objectMap) throws Exception
+    private static void scanCommit(Commit commit,Set<String> objectSet) throws Exception
     {
-        objectMap.remove(commit.getKey()+"."+commit.getFmt());//删掉commit
-        objectMap.remove(commit.getTreeSerial());//删掉commit里的commitTree
+        objectSet.remove(commit.getKey()+"."+commit.getFmt());//删掉commit
+        objectSet.remove(commit.getTreeSerial());//删掉commit里的commitTree
         Tree commitTree = commit.getTree();
-        objectMap.removeAll(commitTree.getTreeMap().values());//删掉commitTree中所有的文件
+        objectSet.removeAll(commitTree.getTreeMap().values());//删掉commitTree中所有的文件
     }
 
 
     /**
      * 将set中未被遍历到的文件全部删除
-     * @param objectMap
+     * @param objectSet
      * @throws Exception
      */
-    private static void delGarbage(Set<String> objectMap) throws Exception
+    private static void delGarbage(Set<String> objectSet) throws Exception
     {
-        objectMap.forEach((serialFileName) ->
+        objectSet.forEach((serialFileName) ->
         {
             try { FileDeletion.deleteFile(".jit/objects/"+serialFileName);System.out.println(serialFileName+" is deleted!");}
             catch (Exception e) { e.printStackTrace();}
